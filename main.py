@@ -15,11 +15,26 @@ pygame.display.set_caption('Стёпа-робот')
 
 FPS = 60
 clock = pygame.time.Clock()
-BG_COLOR = (255,255,200)
-com_BG = (255,255,255)
+BG_COLOR = (255,255,255)
+BG_COLOR1 = (200,200,200)
+BG_COLOR2 = (255,255,255)
+com_BG = (220,220,220)
 
-part1 = pygame.Surface((WIDTH_WIN // 5, HEIGHT_WIN))
-part1. = '0,30'
+part1 = pygame.Surface((WIDTH_WIN // 6, HEIGHT_WIN))
+part1_rect = part1.get_rect(topleft=(0, 0))
+part1.fill(com_BG)
+
+part2 = pygame.Surface((WIDTH_WIN // 2, HEIGHT_WIN))
+part2_rect = part2.get_rect(topleft=(WIDTH_WIN // 2, 0))
+part2.fill(BG_COLOR1)
+
+
+def line1():
+    pygame.draw.rect(part1, pygame.Color('black'), [0, 0, WIDTH_WIN // 6 - 1.5, HEIGHT_WIN - 1.5], 3)
+    
+
+def line2():
+    pygame.draw.rect(part2, pygame.Color('black'), [0, 0, WIDTH_WIN // 2, HEIGHT_WIN], 3)
 
 
 run = True
@@ -28,5 +43,8 @@ while run:
         if e.type == pygame.QUIT or e.type == pygame.KEYDOWN and e.key == pygame.K_ESCAPE:
             run = False
     screen.fill(BG_COLOR)
-    part1.fill(com_BG)
+    screen.blit(part1, part1_rect)
+    screen.blit(part2, part2_rect)
+    line1()
+    line2()
     pygame.display.update()
