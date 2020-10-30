@@ -47,6 +47,7 @@ st_btn = pygame.image.load('pause_button.png')
 st_btn = pygame.transform.scale(st_btn, (100, 100))
 st_btn_rect = st_btn.get_rect(center = (100, 100))
 
+
 ##pause = pygame.image.load('pause_button.png')
 ##pause = pygame.transform.scale(pause, (100, 100))
 ##pause_rect = pause.get_rect(center=(100, 100))
