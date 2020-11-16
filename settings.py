@@ -1,0 +1,9 @@
+i = [False, True]
+q = [False, True]
+w = [False, True]
+B = 0
+FPS = 60
+BG_COLOR = (255, 255, 255)
+BG_COLOR1 = (200, 200, 200)
+BG_COLOR2 = (255, 255, 255)
+com_BG = (220, 220, 220)
