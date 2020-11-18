@@ -26,6 +26,18 @@ res1_rect = res1.get_rect(center=(205, 90))
 
 lamp = pygame.image.load('lamp_button.png')
 lamp = pygame.transform.scale(lamp, (100, 100))
-lamp_rect = lamp.get_rect(center=(500, 90))
+lamp_rect = lamp.get_rect(center=(1650, 40))
+
+inv_lamp = pygame.image.load('inv_lamp_button.png')
+inv_lamp = pygame.transform.scale(inv_lamp, (100, 100))
+inv_lamp_rect = inv_lamp.get_rect(center=(1650, 40))
+
+task = pygame.image.load('task_button.png')
+task = pygame.transform.scale(task, (100, 100))
+task_rect = task.get_rect(center=(1800, 40))
+
+inv_task = pygame.image.load('inv_task_button.png')
+inv_task = pygame.transform.scale(inv_task, (100, 100))
+inv_task_rect = inv_task.get_rect(center=(1800, 40))
 
 BG_map = pygame.image.load('коридор.jpg')
